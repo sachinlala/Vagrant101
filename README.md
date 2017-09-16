@@ -2,15 +2,25 @@
 1. Ensure the following are installed
 * [Virtual Box (with Extension Packages)](https://www.virtualbox.org)
 * [Vagrant](https://www.vagrantup.com/)
-2. Initialize with a default stable `Vagrantfile`
+2. Initialize with a default stable `Vagrantfile` and bring up the VM:
    ```
+   vagrant box add hashicorp/precise64 http://files.vagrantup.com/precise64.box 
    vagrant init hashicorp/precise64
+   vagrant up
    ```
-#### Command reference
+
+#### Command List
 |Command|Purpose|
 |-------|-------|
-|vagrant up|Create new or bring up an existing VM|
-|vagrant status|Check status|
-|vagrant halt|Suspend (Graceful Shutdown)|
-|vagrant destroy|Destroy VM|
-|vagrant reload|Bounce VM|
+|`vagrant up`|Create new or bring up an existing VM|
+|`vagrant status`|Check status|
+|`vagrant halt`|Suspend (Graceful Shutdown)|
+|`vagrant destroy`|Destroy VM|
+|`vagrant reload`|Bounce VM|
+|`vagrant box list`|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
+
+### Reference
+* Catalogs: [1](https://app.vagrantup.com/boxes/search) & [2](http://www.vagrantbox.es/)
+* 
+
+
