@@ -12,15 +12,16 @@
 #### Command List
 |Command|Purpose|
 |-------|-------|
-|`vagrant up`|Create new or bring up an existing VM|
-|`vagrant status`|Check status|
-|`vagrant halt`|Suspend (Graceful Shutdown)|
-|`vagrant destroy`|Destroy VM|
-|`vagrant reload`|Bounce VM|
-|`vagrant box list`|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
+|``vagrant up``|Create new or bring up an existing VM|
+|``vagrant status``|Check status|
+|``vagrant halt``|Suspend (Graceful Shutdown)|
+|``vagrant destroy``|Destroy VM|
+|``vagrant reload``|Bounce VM|
+|``vagrant box list``|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
+|``vagrant box add <title> <url>``|Add new base box|
 
 ### Reference
+* [All about Vagrant and the good stuff by HashiCorp !](https://www.vagrantup.com/)
 * Catalogs: [1](https://app.vagrantup.com/boxes/search) & [2](http://www.vagrantbox.es/)
-* 
 
 
