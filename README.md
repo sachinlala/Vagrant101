@@ -4,10 +4,11 @@
 * [Vagrant](https://www.vagrantup.com/)
 2. Initialize with a default stable `Vagrantfile` and bring up the VM:
    ```
-   vagrant box add hashicorp/precise64 http://files.vagrantup.com/precise64.box ## This is optional step, when downloading from the [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
+   vagrant box add hashicorp/precise64 http://files.vagrantup.com/precise64.box
    vagrant init hashicorp/precise64
    vagrant up
    ```
+   Note: '_vagrant box add_' step is optional, when downloading from the [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
 
 #### Command List
 |Command|Purpose|
