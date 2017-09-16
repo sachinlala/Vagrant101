@@ -32,6 +32,7 @@ vagrant up
 |``vagrant box list``|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
 |``vagrant box add <title> <url>``|Add new base box|
 |``vagrant box update``|Update the box to latest version available|
+|``vagrant provision``|Run the provisioner mentioned in Vagrantfile, while the VM is up & running|
 
 
 
