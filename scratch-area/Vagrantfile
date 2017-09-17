@@ -1,0 +1,4 @@
+# it's ok to override this file as it's only for reference and is the most basic Vagrantfile
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/precise64"
+end

@@ -1,0 +1,16 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "antapos/ubuntu-trusty64-jdk8-maven"
+  config.vm.box_version = "0.1"
+  config.vm.hostname = "vagrant101"
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
+  #config.vm.synced_folder "../", "/home/vagrant/"
+  config.vm.provision "shell", path: "provision-jetty.sh"
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "jetty"
+    vb.memory = "256"
+    #vb.cpus = 2
+  end
+end
