@@ -15,7 +15,11 @@
    ```
    Note: '_vagrant box add_' step is optional, when downloading from the [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
 
-#### Use the Vagrant box with Jetty in it
+#### Dev box with [Jetty](http://www.eclipse.org/jetty/index.html) in it:
+1. Give a name to the VM
+2. Open and map the required port (80:8080) between host & guest OS
+3. Download Jetty
+4. Bring up Jetty
 ```
 cd jetty
 vagrant up
@@ -33,6 +37,3 @@ vagrant up
 |``vagrant box add <title> <url>``|Add new base box|
 |``vagrant box update``|Update the box to latest version available|
 |``vagrant provision``|Run the provisioner mentioned in Vagrantfile, while the VM is up & running|
-
-
-
