@@ -13,21 +13,21 @@
    vagrant init hashicorp/precise64
    vagrant up
    ```
-   Note: '_vagrant box add_' step is optional, when downloading from the [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
+   Note: '_vagrant box add_' step is optional, when using a template from [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
 
-#### Dev box with [Jetty](http://www.eclipse.org/jetty/index.html) in it:
-1. Give a name to the VM
-2. Open and map the required port (80:8080) between host & guest OS
-3. Download Jetty
-4. Bring up Jetty
+#### Sample Dev Box (e.g. when you need a dev env with JDK & [Jetty](http://www.eclipse.org/jetty/index.html) in it):
 ```
 cd jetty
 vagrant up
 ```
+What were the key steps executed to construct this box:
+1. Give a name to the VM
+2. Open and map the required port (80:8080) between host & guest OS
+3. Provision a SHELL to download & bring up Jetty
 
 #### Command List
 |Command|Purpose|
-|-------|-------|
+|-------:|-------|
 |``vagrant up``|Create new or bring up an existing VM|
 |``vagrant status``|Check status|
 |``vagrant halt``|Suspend (Graceful Shutdown)|
