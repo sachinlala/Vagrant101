@@ -15,25 +15,25 @@
    ```
    Note: '_vagrant box add_' step is optional, when using a template from [HashiCorp Atlas site](https://app.vagrantup.com/boxes/search)
 
-#### Sample Dev Box (e.g. when you need a dev env with JDK & [Jetty](http://www.eclipse.org/jetty/index.html) in it):
-```
-cd jetty
-vagrant up
-```
+#### Sample Dev Box w/ a web-server(e.g. when you need a dev env with JDK & [Jetty](http://www.eclipse.org/jetty/index.html) in it):
 What were the key steps executed to construct this box:
 1. Give a name to the VM
 2. Open and map the required port (80:8080) between host & guest OS
 3. Provision a SHELL to download & bring up Jetty
+```
+cd jetty
+vagrant up
+```
 
 #### Command List
 |Command|Purpose|
-|-------:|-------|
-|``vagrant up``|Create new or bring up an existing VM|
-|``vagrant status``|Check status|
-|``vagrant halt``|Suspend (Graceful Shutdown)|
-|``vagrant destroy``|Destroy VM|
-|``vagrant reload``|Bounce VM|
-|``vagrant box list``|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
-|``vagrant box add <title> <url>``|Add new base box|
-|``vagrant box update``|Update the box to latest version available|
-|``vagrant provision``|Run the provisioner mentioned in Vagrantfile, while the VM is up & running|
+|:-------|-------|
+|_vagrant up_|Create new or bring up an existing VM|
+|_vagrant status_|Check status|
+|_vagrant halt_|Suspend (Graceful Shutdown)|
+|_vagrant destroy_|Destroy VM|
+|_vagrant reload_|Bounce VM|
+|_vagrant box list_|Print the list of all templates (aka [vagrant boxes](https://www.vagrantup.com/docs/boxes.html)) present in your machine|
+|_vagrant box add <title> <url>_|Add new base box|
+|_vagrant box update_|Update the box to latest version available|
+|_vagrant provision_|Run the provisioner mentioned in Vagrantfile, while the VM is up & running|
